@@ -1,0 +1,137 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 1px 2px rgba(0, 0, 0, .08);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.main ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main ul li {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid hsl(0, 0%, 63%);
+  border-radius: 5px;
+  background-color: rgb(163, 35, 35);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.main ul li:hover {
+  background: #ddd;
+}
+
+.main ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.main ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.header {
+  padding: 30px 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.addBtn, .changeBtn {
+  padding: 8px;
+  width: 10%;
+  background: hsl(211, 100%, 68%);
+  color: #fff;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px; /* Увеличиваем радиус для создания округлых углов */
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.dialog {
+  background-color: hsl(0, 0%, 89%); /* Серый фон */
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  opacity: 1; /* Непрозрачность */
+  border-radius: 10px;
+}
+
+/* Style for title and content to have same font size */
+#title,
+#content {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Граница инпута */
+  border-radius: 5px; /* Скругление углов */
+  background-color: #f9f9f9; /* Фон инпута */
+}
+
+/* Style for labels to be above the input fields */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for Create Task and Cancel buttons to make them visually appealing */
+#some, #cancel {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  font-size: 16px;
+}
+
+#some {
+ background-color: #4CAF50; 
+ border-radius: 10px;
+ color:white; 
+}
+
+#cancel {
+background: hsl(211, 100%, 68%);
+border-radius: 10px;
+ color:white; 
+}

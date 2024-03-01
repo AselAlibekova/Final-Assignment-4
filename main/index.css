@@ -1,0 +1,88 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.bg-light {
+  background-color: #d8bf79;
+}
+
+/* Стили для основного контейнера */
+.main {
+  width: 70%; /* Ширина основного контейнера на маленьких экранах */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  background: linear-gradient(to right, lightblue, darkblue);
+  margin: 20px auto;
+}
+
+/* Стили для диалогов */
+.dialog {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+}
+
+/* Стили для формы в диалоге */
+.dialog form {
+  margin-top: 20px;
+}
+
+.dialog h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dialog .form-group {
+  margin-bottom: 20px;
+}
+
+.dialog label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.dialog input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dialog button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #1b7c3b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel {
+  width: 80%; /* Устанавливаем ширину карусели на 80% от родительского элемента */
+  margin: 0 auto; /* Центрируем карусель по горизонтали */
+}
+
+.carousel-item img {
+  max-width: 100%; /* Устанавливаем максимальную ширину изображения на 100% от ширины элемента карусели */
+  height: auto; /* Автоматически рассчитываем высоту изображения для сохранения пропорций */
+}
+
